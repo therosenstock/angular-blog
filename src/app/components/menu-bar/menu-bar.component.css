@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 .gradient{
   background: rgb(131,58,180);
   height: 10px;
   width: 100%;
   background: linear-gradient(90deg, rgba(131,58,180,1) 30%, rgba(252,176,69,1) 91%, rgba(255,55,29,0.989233193277311) 2530%);
+}
+.container__menu-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+
+}
+.menu-bar__logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: end;
+  margin: 0;
+  gap: 4px;
+}
+.menu-bar__logo > img {
+  width: 36px;
+  height: 36px;
+}
+.menu-bar__logo > h1 {
+  font-size: 2rem;
+  font-family: 'Rochester', cursive;
+  color: #444444;
+}
+.menu-bar__links{
+  display: flex;
+  gap: 24px;
+}
+.menu-bar__links > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content:end;
+  align-items: end;
+}
+.menu-bar__links > ul > li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+.menu-bar__links > ul > li > a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.menu-bar__links > ul > li > a:hover {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 30%, rgba(252,176,69,1) 91%, rgba(255,55,29,0.989233193277311) 2530%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 3s ease;
+  border-bottom: solid 2px;
 }

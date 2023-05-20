@@ -1,0 +1,50 @@
+.container__small-card {
+  width: 600px;
+  height: 175px;
+  margin: 0 15px 15px 15px;
+  display: flex;
+  overflow: hidden;
+}
+.small-card__photo > img {
+  width: 250px;
+  height: 175px;
+}
+.small-card__aside {
+  margin-left: 24px;
+}
+.small-card__title {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.small-card__title > span {
+  font-size: .825rem;
+  font-weight: 300;
+  color: #444;
+}
+.small-card__title > a {
+  text-decoration: none;
+}
+.small-card__title > a > h1 {
+  font-size: 1.425rem;
+}
+.small-card__resume {
+  margin: 12px 0 12px 0;
+}
+.small-card__resume > p {
+  color: #444;
+}
+.small-card__resume > .tags{
+  display:flex;
+  font-size: .875rem;
+  font-weight: 600;
+  margin-top: 24px;
+  gap: 4px;
+}
+.small-card__resume > .tags > .tags-article{
+  border: #555 2px solid;
+  border-radius: 16px;
+  padding: 4px;
+  color: #444;
+
+}

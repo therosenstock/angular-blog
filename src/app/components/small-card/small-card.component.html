@@ -1,22 +1,20 @@
 <div class="container__small-card">
   <div class="small-card__photo">
-    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="" srcset="">
+    <img src="{{photoCover}}" alt="" srcset="">
   </div>
   <div class="small-card__aside">
     <div class="small-card__title">
-      <span>Fabiola Rodrigues • 19 Mai 2023</span>
-      <a href="#">
-        <h1>Saiu a nova versão do Angular! </h1>
+      <span>{{author}} • {{date}}</span>
+      <a [routerLink]="['content', id]">
+        <h1>{{noticeTitle}} </h1>
       </a>
     </div>
     <div class="small-card__resume">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac maximus ipsum, a sodales
-         ex. Quisque eget faucibus nisl...
+        {{noticeResume}}
       </p>
       <div class="tags">
-        <span class="tags-article">Angular</span>
-        <span class="tags-article">Framework</span>
+        <span *ngFor="let t of tags" class="tags-article">{{t}}</span>
       </div>
     </div>
   </div>

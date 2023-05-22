@@ -1,5 +1,5 @@
 .container__small-card {
-  width: 600px;
+  width: 650px;
   height: 175px;
   margin: 0 15px 15px 15px;
   display: flex;
@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 .small-card__title > a > h1 {
-  font-size: 1.425rem;
+  font-size: 1.225rem;
 }
 .small-card__resume {
   margin: 12px 0 12px 0;

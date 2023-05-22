@@ -4,12 +4,44 @@
 <h1>Posts recentes</h1>
 <div class="articles">
   <div class="articles__main">
-    <app-principal-card></app-principal-card>
+    <app-principal-card
+      id="1"
+      photoCover="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+      author="Fabíola Rodrigues" date="20 de maio de 2023"
+      noticeTitle="Saiu a nova versão do Angular!"
+      noticeResume="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac maximus ipsum, a sodales
+      ex. Quisque eget faucibus nisl..."
+      [tags]="['Angular', 'Framework', 'Web Development']"
+    ></app-principal-card>
   </div>
 
   <div class="articles__sub">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+      id="2"
+      photoCover="https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      author="Alice Camargo" date="18 de maio de 2023"
+      noticeTitle="Oportunidades de Bootcamp do último mês!"
+      noticeResume="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac maximus ipsum..."
+      [tags]="['Carreira', 'Bootcamp', 'Estudos']"
+    ></app-small-card>
+    <app-small-card
+      id="3"
+      photoCover="https://images.unsplash.com/photo-1483213097419-365e22f0f258?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      author="Fabíola Rodrigues" date="12 de maio de 2023"
+      noticeTitle="Desafios da transição de carreira"
+      noticeResume="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac maximus ipsum, a sodales
+      ex. Quisque eget faucibus nisl..."
+      [tags]="['Lifestyle', 'Carreira']"
+    ></app-small-card>
+    <app-small-card
+      id="4"
+      photoCover="https://www.alura.com.br/artigos/assets/react-conheca-novidades-versao-18-react/react-conheca-novidades-versao-18-react.png"
+      author="Ragnar Lothbrock" date="10 de maio de 2023"
+      noticeTitle="Trabalhando com React"
+      noticeResume="Lorem ipsum dolor sit amet. Donec ac maximus ipsum, a sodales
+      ex. Quisque eget faucibus nisl..."
+      [tags]="['React','Framework', 'Web Development']"
+    ></app-small-card>
   </div>
 </div>
+<app-footer></app-footer>
